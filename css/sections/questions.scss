@@ -1,0 +1,35 @@
+.questions {
+    background: url("../img/bg/questions.png") no-repeat;
+    background-size: cover;
+}
+.container__questions {
+    padding: 100px;
+}
+.question__title {
+    color: $white;
+    @include malina();
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.accordeon__trigger {
+    text-decoration: none;
+    color: $white;
+    font-size: 22px;
+    padding-bottom: 5px;
+    border-bottom: 3px dashed $white;
+   
+    &:hover {
+        color: $yellow;
+        border-bottom: none;
+    }
+}
+.accordeon__content {
+    color: $white;
+    font-size: 15px;
+    padding: 25px 50px;
+
+    p {
+        margin-bottom: 20px;
+    }
+}

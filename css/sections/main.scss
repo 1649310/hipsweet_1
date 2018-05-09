@@ -1,0 +1,174 @@
+.main {
+    background: url("../img/bg/main.png")no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.main__title {
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.text__center {
+    text-align: center;
+    font-size: 150px;
+    color: #ce454a;
+    @include malina();
+}
+.main_content {
+    @extend %clearfix;
+}
+.main__left {
+    width: 20%;
+    float: left;
+}
+.main__center, .main__right {
+    width: 40%;
+    float: left;
+}
+.main__left-top {
+    margin-bottom: 200px;
+    position: relative;
+}
+
+.main__left-top-icon {
+    padding: 20px 25px;
+}
+
+.main__left-top-icon {
+    background-color: #ce454a;
+    border-radius: 50%;
+    padding: 12px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin: 20px;
+    
+    img {
+        min-height: 100%;
+        max-width: 100%;
+    }
+
+    &:hover {
+        background: $yellow;
+        transition: .3s;
+        cursor: pointer;
+    }
+}
+
+
+.table__dropdown {
+    width: 300px;
+    text-align: left;
+    background: $white;
+    opacity: 0.9;
+    font-size: 16px;
+    border-radius: 15px;
+    padding: 20px;
+    position: absolute;
+    left: -9999px;
+    z-index: 1000;
+    right: -180px;
+    top: -40px;
+
+    &:before {
+        display: block;
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 25px;
+        top: -23px;
+    }
+
+    &:hover {
+        left: 100px;
+        transition: .3s;
+    }
+}
+
+.triangle__table {
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-right-color: $white;
+    bottom: 40%;
+    position: absolute;
+    opacity: 0.9;
+    left: -9999px;
+    z-index: 1000;
+    right: 120px;
+
+    &:hover {
+        left: 60px;
+        transition: .3s;
+    }
+}
+
+
+.main__left-top-text {
+    color: $white;
+    font-size: 15px;
+}
+.main__left-bottom-text {
+    color: #e77c7d;
+    font-size: 13px;
+}
+.main__left-bottom-time {
+    color: $white;
+    font-size: 24px;
+    @include malina();
+}
+
+.main__pic {
+    display: inline-block;
+    width: 370px;
+    height: 430px;
+}
+.main__pic-img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+.title-right {
+    font-size: 62px;
+    @include malina();
+    color: $white;
+    margin-bottom: 25px;
+}
+.main__desc {
+    margin-bottom: 45px;
+    p {
+        color: $white;
+        font-size: 15px;
+    }
+}
+.main__prise-inner {
+    @extend %clearfix;
+}
+.main__prise-amount, .main__prise-buy {
+    float: left;
+    width: 50%;
+}
+.main__prise-amount {
+    color: $white;
+    @include malina();
+    font-size: 62px;
+}
+.main__buy {
+    background: $yellow;
+    font-size: 14px;
+    padding: 13px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #a4151c;
+    display: inline-block;
+
+    &:hover {
+        color: $yellow;
+        background: #641a00;
+        transition: .3s;
+    } 
+}

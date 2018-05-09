@@ -1,0 +1,52 @@
+.about {
+    background: url("../img/bg/about.png") no-repeat;
+    background-size: cover;
+}
+.section {
+    @extend %clearfix;
+    padding: 50px;
+    padding-bottom: 0;
+}
+.about__left {
+    float: left;
+    width: 60%;
+    padding: 60px 0;
+}
+.about__right {
+    float: right;
+    width: 40%;
+    text-align: center;
+}
+.title {
+    font-size: 62px;
+    color: $blue;
+    margin-bottom: 30px;
+    @include malina();
+}
+.about__desc {
+    width: 66%;
+    margin-bottom: 65px;
+    p {
+        font-size: 16px;
+        color: $grey;
+    }
+}
+.about__item {
+    @include inlineblock();
+    width: 32%;
+}
+.about__img-pic {
+    display: block;
+    max-width: 100%;
+
+}
+.about__text {
+    @include malina();
+    font-size: 16px;
+    color: $grey;
+    padding-top: 30px;
+}
+.about__pic-img {
+    display: inline-block;
+    max-width: 100%;
+}

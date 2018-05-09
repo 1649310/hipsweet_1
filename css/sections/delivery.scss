@@ -1,0 +1,64 @@
+.delivery {
+    padding: 105px 0px 20px;
+    background: url('../img/bg/pattern.png') no-repeat;
+    background-size: cover;
+}
+.section__title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.section__title-head {
+    color: $black;
+    font-size: 62px;
+    margin-bottom: 25px;
+    @include malina();
+}
+
+.section__title-des {
+    font-size: 16px;
+    color: #883213;
+    width: 70%;
+    display: inline-block;
+
+    a {
+        color: $black;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+.delivery__list {
+   font-size: 0;
+}
+.delivery__item {
+    @include inlineblock(top);
+    width: 25%;
+    margin-bottom: 65px;
+    a {
+      text-decoration: none;
+    }
+}
+.delivery__link {
+    display: block;
+    padding: 0 30px;
+}
+.delivery__img-pic {
+    display: block;
+    max-width: 100%;
+    padding: 0 15px 30px;
+}
+
+.delivery__title {
+    color: $black;
+    font-size: 32px;
+    margin-bottom: 15px;
+    @include malina();
+    text-align: center;
+    
+}
+.delivery__text-content {
+    color: #883213;
+    font-size: 14px;
+    text-align: center;
+}
+

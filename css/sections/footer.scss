@@ -1,0 +1,11 @@
+.footer {
+    @extend %clearfix;
+}
+.footer__logo, .footer__left {
+    float: left;
+    width: 20%;
+}
+.footer__right, .footer__socials {
+    float: right;
+    width: 30%;
+}
