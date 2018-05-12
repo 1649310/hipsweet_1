@@ -55,11 +55,17 @@
         background: $yellow;
         transition: .3s;
         cursor: pointer;
+
+        .main__left-top-dropdown {
+            left: 120px;
+        }
+        .triangle__table {
+            left: -60px;
+        }
     }
 }
 
-
-.table__dropdown {
+.main__left-top-dropdown {
     width: 300px;
     text-align: left;
     background: $white;
@@ -71,7 +77,7 @@
     left: -9999px;
     z-index: 1000;
     right: -180px;
-    top: -40px;
+    top: -56px;
 
     &:before {
         display: block;
@@ -81,11 +87,6 @@
         right: 0;
         height: 25px;
         top: -23px;
-    }
-
-    &:hover {
-        left: 100px;
-        transition: .3s;
     }
 }
 
@@ -99,12 +100,7 @@
     opacity: 0.9;
     left: -9999px;
     z-index: 1000;
-    right: 120px;
-
-    &:hover {
-        left: 60px;
-        transition: .3s;
-    }
+    right: 300px;
 }
 
 
@@ -146,12 +142,11 @@
     }
 }
 .main__prise-inner {
-    @extend %clearfix;
+    @include inlineblock(top);
+    // width: 50%;
+    font-size: 0;
 }
-.main__prise-amount, .main__prise-buy {
-    float: left;
-    width: 50%;
-}
+
 .main__prise-amount {
     color: $white;
     @include malina();

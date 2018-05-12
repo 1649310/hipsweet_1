@@ -41,11 +41,20 @@
 .delivery__link {
     display: block;
     padding: 0 30px;
+    
+}
+.delivery__img{
+    position: relative;
+
 }
 .delivery__img-pic {
     display: block;
     max-width: 100%;
     padding: 0 15px 30px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .delivery__title {
